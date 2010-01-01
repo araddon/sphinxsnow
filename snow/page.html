@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% if pagename == 'index' and not theme_sidebaronindex|tobool %}
+{%- set theme_nosidebar = true %}
+{% endif %}
+{% block body %}
+  {{ body }}
+{% endblock %}
+
